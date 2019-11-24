@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>OK</h1>
-    <my-vue-component></my-vue-component>
+<h1>START</h1>
+    <art-prop-component :cars="{{ json_encode($cars) }}"></art-prop-component>
 @endsection

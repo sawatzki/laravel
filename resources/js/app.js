@@ -22,6 +22,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('my-vue-component', require('./components/MyVueComponent.vue').default);
+Vue.component('art-prop-component', require('./components/ArtPropComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
