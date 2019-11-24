@@ -4,15 +4,13 @@
             <div class="col-md-12">
                 <table class="table">
                     <thead>
-                        <th>Mark</th>
-                        <th>Model</th>
-                        <th>Brake-specific fuel consumption</th>
+                        <th>TITLE</th>
+                        <th>URL</th>
                     </thead>
                     <tbody>
-                        <tr v-for="car in cars">
-                            <td>{{ car.mark }}</td>
-                            <td>{{ car.model }}</td>
-                            <td>{{ car.bsfc }}</td>
+                        <tr v-for="url in url_data">
+                            <td>{{ url.title }}</td>
+                            <td>{{ url.url }}</td>
                         </tr>
                     </tbody>
 
@@ -25,14 +23,14 @@
 <script>
     export default {
         props: [
-            'cars'
+            'url_data'
         ],
         mounted() {
-            console.log('Component mounted.')
+            this.update()
         },
         methods: {
             update: function () {
-                console.log(this.cars);
+                console.log(this.url_data);
             }
         }
     }

@@ -9,19 +9,33 @@ class StartController extends Controller
     public function index()
     {
 
-        $cars = [
+        $url_data = [
             [
-                'mark' => 'Toyota',
-                'model' => 'Prius',
-                'bsfc' => '4.5',
+                'title' => 'Google111',
+                'url' => 'https://google.com111'
             ],
             [
-                'mark' => 'Mitsubishi',
-                'model' => 'Colt',
-                'bsfc' => '8.0',
+                'title' => 'Yandex222',
+                'url' => 'https://ya.ru222'
             ],
         ];
 
-        return view('start', ['cars' => $cars]);
+        return view('ajax', ['url_data' => $url_data]);
     }
+
+    public function getJson()
+    {
+        return [
+            [
+                'title' => 'Google',
+                'url' => 'https://google.com'
+            ],
+            [
+                'title' => 'Yandex',
+                'url' => 'https://ya.ru'
+            ],
+        ];
+        return view('start', ['urls']);
+    }
+
 }

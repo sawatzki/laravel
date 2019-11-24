@@ -2,5 +2,5 @@
 
 @section('content')
 <h1>START</h1>
-    <art-prop-component :cars="{{ json_encode($cars) }}"></art-prop-component>
+    <art-prop-component :url_data="{{ json_encode($url_data) }}"></art-prop-component>
 @endsection
