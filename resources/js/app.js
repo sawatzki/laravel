@@ -24,6 +24,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('my-vue-component', require('./components/MyVueComponent.vue').default);
 Vue.component('art-prop-component', require('./components/ArtPropComponent.vue').default);
 Vue.component('art-ajax-component', require('./components/AjaxComponent.vue').default);
+Vue.component('cars-component', require('./components/CarsComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

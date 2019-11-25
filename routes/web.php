@@ -19,5 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/start', 'StartController@index')->name('start');
-Route::get('/ajax', 'StartController@index')->name('ajax');
-Route::get('/start/get-json', 'StartController@getJson');
+
+Route::get('/ajax', 'StartController@ajax')->name('ajax');
+Route::get('/ajax/get-json', 'StartController@getJson');
+
+Route::get('/cars', 'CarsController@index')->name('cars');
+Route::get('/cars/get-cars', 'CarsController@getCars');

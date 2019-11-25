@@ -36,12 +36,12 @@
         },
         methods: {
             update: function () {
-                this.is_refresh = true
-                axios.get('/start/get-json').then((response) => {
-                    console.log(response)
-                    this.url_data = response.data
-                    this.is_refresh = false
-                    this.id++
+                this.is_refresh = true;
+                axios.get('/ajax/get-json').then((response) => {
+                    console.log(response);
+                    this.url_data = response.data;
+                    this.is_refresh = false;
+                    this.id++;
                 });
             }
         }
